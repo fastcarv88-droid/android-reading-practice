@@ -1,0 +1,52 @@
+[
+  {
+    "audio": "audio/greeting.wav",
+    "id": "greeting",
+    "text": "你好。"
+  },
+  {
+    "audio": "audio/morning.wav",
+    "id": "morning",
+    "text": "早上好。"
+  },
+  {
+    "audio": "audio/thanks.wav",
+    "id": "thanks",
+    "text": "谢谢你。"
+  },
+  {
+    "audio": "audio/water.wav",
+    "id": "water",
+    "text": "我想喝水。"
+  },
+  {
+    "audio": "audio/meal.wav",
+    "id": "meal",
+    "text": "我想吃饭。"
+  },
+  {
+    "audio": "audio/rest.wav",
+    "id": "rest",
+    "text": "我想休息。"
+  },
+  {
+    "audio": "audio/help.wav",
+    "id": "help",
+    "text": "请帮帮我。"
+  },
+  {
+    "audio": "audio/slower.wav",
+    "id": "slower",
+    "text": "请慢一点。"
+  },
+  {
+    "audio": "audio/tired.wav",
+    "id": "tired",
+    "text": "我有点累。"
+  },
+  {
+    "audio": "audio/goodbye.wav",
+    "id": "goodbye",
+    "text": "再见。"
+  }
+]

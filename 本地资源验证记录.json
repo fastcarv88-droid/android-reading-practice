@@ -1,0 +1,232 @@
+{
+  "source_phrase_sha256": "624a640aa51aa016969debf6d5d72af594bf984042e5753d07e85f83f16db78c",
+  "source_count": 10,
+  "update_copy_count": 11,
+  "source_unchanged": true,
+  "project_path_resources": [
+    {
+      "path": "index.html",
+      "http": 200,
+      "bytes": 2744,
+      "type": "text/html"
+    },
+    {
+      "path": "styles.css",
+      "http": 200,
+      "bytes": 2178,
+      "type": "text/css"
+    },
+    {
+      "path": "app.js",
+      "http": 200,
+      "bytes": 10954,
+      "type": "application/javascript"
+    },
+    {
+      "path": "group-practice.mjs",
+      "http": 200,
+      "bytes": 7109,
+      "type": "application/javascript"
+    },
+    {
+      "path": "speech-end.mjs",
+      "http": 200,
+      "bytes": 6167,
+      "type": "application/javascript"
+    },
+    {
+      "path": "local-state.mjs",
+      "http": 200,
+      "bytes": 3471,
+      "type": "application/javascript"
+    },
+    {
+      "path": "content-loader.mjs",
+      "http": 200,
+      "bytes": 2395,
+      "type": "application/javascript"
+    },
+    {
+      "path": "page-lifecycle.mjs",
+      "http": 200,
+      "bytes": 905,
+      "type": "application/javascript"
+    },
+    {
+      "path": "content/phrases.json",
+      "http": 200,
+      "bytes": 947,
+      "type": "application/json"
+    },
+    {
+      "path": "audio/greeting.wav",
+      "http": 200,
+      "duration": 1.692
+    },
+    {
+      "path": "audio/morning.wav",
+      "http": 200,
+      "duration": 2.045
+    },
+    {
+      "path": "audio/thanks.wav",
+      "http": 200,
+      "duration": 2.051
+    },
+    {
+      "path": "audio/water.wav",
+      "http": 200,
+      "duration": 2.308
+    },
+    {
+      "path": "audio/meal.wav",
+      "http": 200,
+      "duration": 2.189
+    },
+    {
+      "path": "audio/rest.wav",
+      "http": 200,
+      "duration": 2.199
+    },
+    {
+      "path": "audio/help.wav",
+      "http": 200,
+      "duration": 2.245
+    },
+    {
+      "path": "audio/slower.wav",
+      "http": 200,
+      "duration": 2.298
+    },
+    {
+      "path": "audio/tired.wav",
+      "http": 200,
+      "duration": 2.224
+    },
+    {
+      "path": "audio/goodbye.wav",
+      "http": 200,
+      "duration": 1.7
+    }
+  ],
+  "final_root_resources": [
+    {
+      "path": "index.html",
+      "http": 200,
+      "bytes": 2726
+    },
+    {
+      "path": "styles.css",
+      "http": 200,
+      "bytes": 2229
+    },
+    {
+      "path": "app.js",
+      "http": 200,
+      "bytes": 11003
+    },
+    {
+      "path": "group-practice.mjs",
+      "http": 200,
+      "bytes": 7109
+    },
+    {
+      "path": "speech-end.mjs",
+      "http": 200,
+      "bytes": 6167
+    },
+    {
+      "path": "local-state.mjs",
+      "http": 200,
+      "bytes": 3471
+    },
+    {
+      "path": "content-loader.mjs",
+      "http": 200,
+      "bytes": 2395
+    },
+    {
+      "path": "page-lifecycle.mjs",
+      "http": 200,
+      "bytes": 905
+    },
+    {
+      "path": "content/phrases.json",
+      "http": 200,
+      "bytes": 947
+    }
+  ],
+  "layout_widths_checked": [
+    320,
+    390
+  ],
+  "desktop_browser_audio_metadata_count": 10,
+  "logic_tests_passed": 64,
+  "real_android_verified": false,
+  "live_site_deployed": false,
+  "step8_audio_scope": "Earlier Windows audio; desktop browser metadata checks apply to that earlier version.",
+  "kokoro_audio_resources": [
+    {
+      "path": "audio/greeting.wav",
+      "http": 200,
+      "bytes": 58844,
+      "duration": 1.225
+    },
+    {
+      "path": "audio/morning.wav",
+      "http": 200,
+      "bytes": 92444,
+      "duration": 1.925
+    },
+    {
+      "path": "audio/thanks.wav",
+      "http": 200,
+      "bytes": 94844,
+      "duration": 1.975
+    },
+    {
+      "path": "audio/water.wav",
+      "http": 200,
+      "bytes": 112844,
+      "duration": 2.35
+    },
+    {
+      "path": "audio/meal.wav",
+      "http": 200,
+      "bytes": 109244,
+      "duration": 2.275
+    },
+    {
+      "path": "audio/rest.wav",
+      "http": 200,
+      "bytes": 110444,
+      "duration": 2.3
+    },
+    {
+      "path": "audio/help.wav",
+      "http": 200,
+      "bytes": 115244,
+      "duration": 2.4
+    },
+    {
+      "path": "audio/slower.wav",
+      "http": 200,
+      "bytes": 108044,
+      "duration": 2.25
+    },
+    {
+      "path": "audio/tired.wav",
+      "http": 200,
+      "bytes": 109244,
+      "duration": 2.275
+    },
+    {
+      "path": "audio/goodbye.wav",
+      "http": 200,
+      "bytes": 63644,
+      "duration": 1.325
+    }
+  ],
+  "kokoro_audio_human_audition_count": 3,
+  "kokoro_audio_desktop_browser_metadata_checked": false
+}

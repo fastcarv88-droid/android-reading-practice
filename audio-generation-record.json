@@ -1,0 +1,99 @@
+{
+  "model": "hexgrad/Kokoro-82M-v1.1-zh",
+  "model_sha256": "b1d8410fa44dfb5c15471fd6c4225ea6b4e9ac7fa03c98e8bea47a9928476e2b",
+  "voice": "zf_001",
+  "speed": 0.85,
+  "format": "PCM_16 WAV",
+  "phrases": [
+    {
+      "id": "greeting",
+      "text": "你好。",
+      "audio": "audio/greeting.wav",
+      "duration_sec": 1.225,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "8c2fa42c83e1c6028a8626a5ce54c660e542f4e47950efd60f3ed414a13a1cc9"
+    },
+    {
+      "id": "morning",
+      "text": "早上好。",
+      "audio": "audio/morning.wav",
+      "duration_sec": 1.925,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "2aa48757ef2e0eef249c5c5fe0292168fd48289ec6bb61b346a096c79a8cb2a4"
+    },
+    {
+      "id": "thanks",
+      "text": "谢谢你。",
+      "audio": "audio/thanks.wav",
+      "duration_sec": 1.975,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "eb4dfd9105a6069f647722a2b7968133a23b8a52cbb1797fda118dfaa90760b8"
+    },
+    {
+      "id": "water",
+      "text": "我想喝水。",
+      "audio": "audio/water.wav",
+      "duration_sec": 2.35,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "9cccbe8c5866427dee049f7a6b30aa611dd6a06310094f5a9174aa7ee0286c73"
+    },
+    {
+      "id": "meal",
+      "text": "我想吃饭。",
+      "audio": "audio/meal.wav",
+      "duration_sec": 2.275,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "7b376526d9bb94bb65a80ae5a8e55f6d2a6d8e17e6a6dec8a4e6380161e3df36"
+    },
+    {
+      "id": "rest",
+      "text": "我想休息。",
+      "audio": "audio/rest.wav",
+      "duration_sec": 2.3,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "db28ec86f8ec9e6f48af6af927b62554fce181a6be98a400095855bb5699ac61"
+    },
+    {
+      "id": "help",
+      "text": "请帮帮我。",
+      "audio": "audio/help.wav",
+      "duration_sec": 2.4,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "9490e22df54d2aff2933dbe92bab5005f4173dafdabe0a73810134e45b383393"
+    },
+    {
+      "id": "slower",
+      "text": "请慢一点。",
+      "audio": "audio/slower.wav",
+      "duration_sec": 2.25,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "49e38c2f596074ba4b3bcb5a8cb4029982fda91bc576bbff5662037c3de2595c"
+    },
+    {
+      "id": "tired",
+      "text": "我有点累。",
+      "audio": "audio/tired.wav",
+      "duration_sec": 2.275,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "39c9458d1bef73b0481b932ebe572be2938d9ad31782cb5f6f72425ef678c8e1"
+    },
+    {
+      "id": "goodbye",
+      "text": "再见。",
+      "audio": "audio/goodbye.wav",
+      "duration_sec": 1.325,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sha256": "90b5e26d9da9bbceb5543e66efeb37303e324d1338099041577a74dbccb0d8a9"
+    }
+  ]
+}

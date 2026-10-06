@@ -1,0 +1,27 @@
+:root { color-scheme: light; font-family: system-ui, "Microsoft YaHei", sans-serif; color: #173a2e; background: #eef5f0; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(100% - 32px, 600px); margin: 32px auto; }
+header { margin-bottom: 28px; }
+.eyebrow { font-size: 16px; letter-spacing: .08em; }
+h1 { font-size: 36px; margin: 8px 0; }
+header > p:last-child { font-size: 22px; color: #476256; }
+.practice { padding: 28px 20px; border: 1px solid #cbded2; border-radius: 24px; background: #fff; text-align: center; box-shadow: 0 8px 24px #173a2e08; }
+#progress { color: #476256; font-size: 18px; margin: 0; }
+h2 { font-size: clamp(36px, 10vw, 52px); line-height: 1.5; margin: 30px 0; overflow-wrap: anywhere; }
+#status { font-size: 24px; line-height: 1.5; min-height: 72px; margin: 0; }
+#countdown { font-size: 20px; font-variant-numeric: tabular-nums; min-height: 32px; margin: 8px 0; }
+button { width: 100%; min-height: 72px; padding: 16px; border: 0; border-radius: 16px; font: inherit; font-size: 26px; font-weight: 650; color: white; background: #21684f; touch-action: manipulation; }
+button:disabled { background: #e0e9e3; color: #52675d; }
+[hidden] { display: none !important; }
+.secondary { margin-top: 16px; background: #eef5f0; color: #173a2e; border: 2px solid #93b3a0; }
+.controls { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.controls button { font-size: 22px; margin-top: 0; padding: 12px 8px; }
+.controls #pause { grid-column: 1 / -1; }
+button:focus-visible, select:focus-visible, summary:focus-visible { outline: 4px solid #ba6a13; outline-offset: 4px; }
+details { margin-top: 24px; padding: 20px; border: 1px solid #cbded2; border-radius: 16px; background: #f9fcfa; }
+summary { font-size: 20px; cursor: pointer; min-height: 36px; }
+label { display: block; font-size: 18px; margin-top: 16px; }
+select { width: 100%; min-height: 56px; margin-top: 8px; padding: 8px; font: inherit; font-size: 22px; background: white; color: #173a2e; border: 1px solid #93b3a0; border-radius: 8px; }
+.note { color: #476256; font-size: 16px; line-height: 1.8; }
+@media (max-width: 360px) { main { width: calc(100% - 24px); margin-top: 20px; } .practice { padding: 24px 16px; } }
