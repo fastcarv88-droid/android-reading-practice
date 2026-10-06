@@ -302,11 +302,35 @@ test('microphone permission arriving after a background switch cannot start play
   f.ui.start.click();
   f.document.hidden = true; f.document.dispatchEvent(new Event('visibilitychange'));
   f.releaseMicrophone(); await flush();
-  assert.equal(f.audio.plays, 0);
+  assert.equal(f.audio.plays, 1);
+  assert.equal(f.audio.paused, true);
   assert.equal(f.microphone.ready, false);
   f.document.hidden = false; f.document.dispatchEvent(new Event('visibilitychange'));
-  assert.equal(f.audio.plays, 0);
+  assert.equal(f.audio.plays, 1);
   assert.equal(f.microphone.prepares, 1);
+});
+
+test('first playback starts immediately while microphone permission is pending', async () => {
+  const f = await page(storage(), { deferMic: true });
+  f.ui.start.click();
+  assert.equal(f.audio.plays, 1);
+  f.audio.end();
+  assert.equal(f.microphone.sessions.length, 0);
+  f.releaseMicrophone(); await flush();
+  assert.equal(f.microphone.sessions.length, 1);
+  assert.equal(f.audio.plays, 1);
+});
+
+test('manual mode during pending permission does not replay or reopen the microphone', async () => {
+  const f = await page(storage(), { deferMic: true });
+  f.ui.start.click(); f.audio.end();
+  f.ui['manual-start'].click();
+  assert.equal(f.audio.plays, 1);
+  assert.equal(f.ui.finished.hidden, false);
+  f.releaseMicrophone(); await flush();
+  assert.equal(f.microphone.ready, false);
+  f.ui.finished.click();
+  assert.equal(f.audio.plays, 2);
 });
 
 test('system audio pause and microphone interruptions need explicit Continue', async () => {

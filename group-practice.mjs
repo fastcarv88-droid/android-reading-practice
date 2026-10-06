@@ -104,7 +104,12 @@ export class GroupPractice {
     if (!this.canRun()) { this.pause('background'); return; }
     const generation = this.generation;
     try {
-      this.audio.src = this.phrases[this.index].audio;
+      const source = this.phrases[this.index].audio;
+      // Setting src again discards the already buffered audio on every repeat.
+      if (this.loadedSource !== source) {
+        this.audio.src = source;
+        this.loadedSource = source;
+      }
       this.audio.currentTime = 0;
       this.lastPlaybackTime = 0;
       this.emit();

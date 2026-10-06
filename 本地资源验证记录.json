@@ -228,5 +228,12 @@
     }
   ],
   "kokoro_audio_human_audition_count": 3,
-  "kokoro_audio_desktop_browser_metadata_checked": false
+  "kokoro_audio_desktop_browser_metadata_checked": false,
+  "xiaoxiao_audio_verification_2026_10_06": {
+    "chrome_metadata_files": 10,
+    "local_http_bytes_matched": 10,
+    "automated_flow_checks_passed": 67,
+    "android_device_tested": false
+  },
+  "current_audio_source": "Microsoft zh-CN-XiaoxiaoNeural; see audio-generation-record.json"
 }

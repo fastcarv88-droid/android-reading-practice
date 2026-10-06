@@ -23,6 +23,18 @@ function fixture({ repeats = 2, count = 2 } = {}) {
   return { practice, audio, listener, sessions, states, ended, finish, clock };
 }
 
+test('repeating the same sentence retains buffered audio; changing sentence reloads it', () => {
+  const f = fixture();
+  let source, assignments = 0;
+  Object.defineProperty(f.audio, 'src', { get: () => source, set(value) { source = value; assignments++; } });
+  f.practice.start(); f.ended(); f.finish();
+  assert.equal(assignments, 1);
+  f.practice.replay();
+  assert.equal(assignments, 1);
+  f.practice.next();
+  assert.equal(assignments, 2);
+});
+
 test('whole group: two repeats per sentence, listen after audio, stop at the end', () => {
   const f = fixture();
   f.practice.start();

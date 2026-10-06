@@ -12,6 +12,7 @@ const pageAvailable = () => lifecycle ? lifecycle.available : !document.hidden;
 const microphone = new MicrophoneListener({ onInterruption: () => pause('interrupted') });
 const localState = new LocalPracticeState();
 let preparing = false;
+let pendingListening = null;
 let request = 0;
 let useMicrophone = true;
 let pendingAction = null;
@@ -24,7 +25,16 @@ let contentProblem = null;
 const lastActions = new Map();
 const text = (element, value) => { if (element.textContent !== value) element.textContent = value; };
 
-const practice = new GroupPractice({ audio, listener: microphone, canRun: pageAvailable, onState(nextState) {
+const listener = {
+  start(callbacks) {
+    if (preparing) pendingListening = callbacks;
+    else if (!useMicrophone) callbacks.onError();
+    else microphone.start(callbacks);
+  },
+  stop() { pendingListening = null; microphone.stop(); },
+  snapshot() { return pendingListening?.initial || microphone.snapshot(); },
+};
+const practice = new GroupPractice({ audio, listener, canRun: pageAvailable, onState(nextState) {
   state = nextState;
   if (state.manual) { useMicrophone = false; microphone.close(); }
   if (['paused', 'error', 'complete'].includes(state.phase)) microphone.close();
@@ -88,7 +98,7 @@ function render() {
       : '这句音频暂时无法播放，请重试或下一句',
     complete: '这一组结束了，可以休息一下',
   };
-  text(ui.status, loading ? '正在加载练习内容…' : preparing ? '请允许使用麦克风，或选择手动确认' : messages[state.phase]);
+  text(ui.status, loading ? '正在加载练习内容…' : preparing && state.phase !== 'playing' ? '请允许使用麦克风，或选择手动确认' : messages[state.phase]);
   const labels = { idle: '开始练习', playing: '正在练习', listening: '正在练习', paused: '继续', error: '重试这句', complete: '重新开始这组' };
   text(ui.start, pendingAction && !preparing ? '重试麦克风' : labels[state.phase]);
   if (contentProblem && !loading) {
@@ -113,18 +123,31 @@ async function run(action) {
   preparing = true;
   pendingAction = action;
   render();
+  // Request permission and play in the same click, without waiting for the mic.
+  const preparation = microphone.prepare(Number(ui['silence-select'].value) * 1000);
+  action();
   try {
-    await microphone.prepare(Number(ui['silence-select'].value) * 1000);
+    await preparation;
     if (token !== request) return;
     if (!pageAvailable()) { pause('background'); return; }
     preparing = false;
     pendingAction = null;
-    action();
+    const callbacks = pendingListening;
+    pendingListening = null;
+    if (callbacks) microphone.start(callbacks);
+    render();
   } catch {
     if (token !== request) return;
     preparing = false;
+    pendingAction = null;
+    useMicrophone = false;
+    microphone.close();
+    const callbacks = pendingListening;
+    pendingListening = null;
+    if (callbacks) callbacks.onError();
     render();
-    text(ui.status, '麦克风未启用。可重试，或选择手动确认');
+    if (state.phase === 'playing') text(ui.status, '请听示范；麦克风未启用，稍后点击“我说完了”');
+    else if (state.phase === 'listening') text(ui.status, '麦克风未启用，说完后点击“我说完了”');
   }
 }
 
@@ -177,7 +200,10 @@ ui['manual-start'].addEventListener('click', () => {
   pendingAction = null;
   useMicrophone = false;
   microphone.close();
-  action();
+  const callbacks = pendingListening;
+  pendingListening = null;
+  if (callbacks) callbacks.onError();
+  render();
 });
 ui['phrase-select'].addEventListener('change', () => {
   practice.index = ui['phrase-select'].selectedIndex;
@@ -220,6 +246,15 @@ async function loadContent() {
   try {
     const phrases = await loadPhrases({ fetcher: fetch });
     practice.phrases = phrases;
+    if (document.createElement && document.head) {
+      for (const phrase of phrases) {
+        const hint = document.createElement('link');
+        hint.rel = 'prefetch';
+        hint.as = 'audio';
+        hint.href = phrase.audio;
+        document.head.appendChild(hint);
+      }
+    }
     ui['phrase-select'].replaceChildren(...phrases.map(p => new Option(p.text, p.id)));
     const restored = localState.read(phrases);
     ui['repeats-select'].value = String(restored.settings.repeats);
@@ -232,6 +267,10 @@ async function loadContent() {
     loading = false;
     if (restored.progress) practice.restore(restored.progress, restored.settings.repeats);
     else practice.emit();
+    // Warm the selected clip before the first click; never autoplay here.
+    audio.src = phrases[practice.index].audio;
+    practice.loadedSource = phrases[practice.index].audio;
+    audio.load?.();
   } catch (error) {
     loading = false;
     practice.phrases = [];

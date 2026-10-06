@@ -1,52 +1,52 @@
 [
   {
-    "audio": "audio/greeting.wav",
     "id": "greeting",
-    "text": "你好。"
+    "text": "你好。",
+    "audio": "audio/greeting.mp3"
   },
   {
-    "audio": "audio/morning.wav",
     "id": "morning",
-    "text": "早上好。"
+    "text": "早上好。",
+    "audio": "audio/morning.mp3"
   },
   {
-    "audio": "audio/thanks.wav",
     "id": "thanks",
-    "text": "谢谢你。"
+    "text": "谢谢你。",
+    "audio": "audio/thanks.mp3"
   },
   {
-    "audio": "audio/water.wav",
     "id": "water",
-    "text": "我想喝水。"
+    "text": "我想喝水。",
+    "audio": "audio/water.mp3"
   },
   {
-    "audio": "audio/meal.wav",
     "id": "meal",
-    "text": "我想吃饭。"
+    "text": "我想吃饭。",
+    "audio": "audio/meal.mp3"
   },
   {
-    "audio": "audio/rest.wav",
     "id": "rest",
-    "text": "我想休息。"
+    "text": "我想休息。",
+    "audio": "audio/rest.mp3"
   },
   {
-    "audio": "audio/help.wav",
     "id": "help",
-    "text": "请帮帮我。"
+    "text": "请帮帮我。",
+    "audio": "audio/help.mp3"
   },
   {
-    "audio": "audio/slower.wav",
     "id": "slower",
-    "text": "请慢一点。"
+    "text": "请慢一点。",
+    "audio": "audio/slower.mp3"
   },
   {
-    "audio": "audio/tired.wav",
     "id": "tired",
-    "text": "我有点累。"
+    "text": "我有点累。",
+    "audio": "audio/tired.mp3"
   },
   {
-    "audio": "audio/goodbye.wav",
     "id": "goodbye",
-    "text": "再见。"
+    "text": "再见。",
+    "audio": "audio/goodbye.mp3"
   }
 ]
