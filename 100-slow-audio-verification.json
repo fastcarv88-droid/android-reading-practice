@@ -1,0 +1,409 @@
+{
+  "count": 100,
+  "decoded": 100,
+  "rate": "-30%",
+  "durations": [
+    {
+      "id": "practice-001",
+      "seconds": 1.872
+    },
+    {
+      "id": "practice-002",
+      "seconds": 2.256
+    },
+    {
+      "id": "practice-003",
+      "seconds": 1.872
+    },
+    {
+      "id": "practice-004",
+      "seconds": 2.52
+    },
+    {
+      "id": "practice-005",
+      "seconds": 2.088
+    },
+    {
+      "id": "practice-006",
+      "seconds": 2.592
+    },
+    {
+      "id": "practice-007",
+      "seconds": 2.184
+    },
+    {
+      "id": "practice-008",
+      "seconds": 2.664
+    },
+    {
+      "id": "slower",
+      "seconds": 2.184
+    },
+    {
+      "id": "help",
+      "seconds": 2.256
+    },
+    {
+      "id": "practice-011",
+      "seconds": 1.872
+    },
+    {
+      "id": "practice-012",
+      "seconds": 1.872
+    },
+    {
+      "id": "practice-013",
+      "seconds": 1.872
+    },
+    {
+      "id": "practice-014",
+      "seconds": 1.872
+    },
+    {
+      "id": "practice-015",
+      "seconds": 1.968
+    },
+    {
+      "id": "practice-016",
+      "seconds": 1.968
+    },
+    {
+      "id": "practice-017",
+      "seconds": 2.184
+    },
+    {
+      "id": "practice-018",
+      "seconds": 2.4
+    },
+    {
+      "id": "practice-019",
+      "seconds": 2.28
+    },
+    {
+      "id": "practice-020",
+      "seconds": 2.184
+    },
+    {
+      "id": "greeting",
+      "seconds": 1.872
+    },
+    {
+      "id": "morning",
+      "seconds": 1.992
+    },
+    {
+      "id": "thanks",
+      "seconds": 1.992
+    },
+    {
+      "id": "goodbye",
+      "seconds": 1.872
+    },
+    {
+      "id": "practice-025",
+      "seconds": 2.016
+    },
+    {
+      "id": "practice-026",
+      "seconds": 2.16
+    },
+    {
+      "id": "practice-027",
+      "seconds": 2.184
+    },
+    {
+      "id": "practice-028",
+      "seconds": 2.088
+    },
+    {
+      "id": "practice-029",
+      "seconds": 1.872
+    },
+    {
+      "id": "practice-030",
+      "seconds": 2.04
+    },
+    {
+      "id": "water",
+      "seconds": 2.376
+    },
+    {
+      "id": "meal",
+      "seconds": 2.232
+    },
+    {
+      "id": "practice-033",
+      "seconds": 2.16
+    },
+    {
+      "id": "practice-034",
+      "seconds": 2.232
+    },
+    {
+      "id": "practice-035",
+      "seconds": 2.232
+    },
+    {
+      "id": "practice-036",
+      "seconds": 2.304
+    },
+    {
+      "id": "practice-037",
+      "seconds": 2.16
+    },
+    {
+      "id": "practice-038",
+      "seconds": 2.16
+    },
+    {
+      "id": "practice-039",
+      "seconds": 2.592
+    },
+    {
+      "id": "practice-040",
+      "seconds": 2.664
+    },
+    {
+      "id": "rest",
+      "seconds": 2.28
+    },
+    {
+      "id": "tired",
+      "seconds": 2.088
+    },
+    {
+      "id": "practice-043",
+      "seconds": 2.304
+    },
+    {
+      "id": "practice-044",
+      "seconds": 2.232
+    },
+    {
+      "id": "practice-045",
+      "seconds": 2.304
+    },
+    {
+      "id": "practice-046",
+      "seconds": 2.184
+    },
+    {
+      "id": "practice-047",
+      "seconds": 2.16
+    },
+    {
+      "id": "practice-048",
+      "seconds": 2.112
+    },
+    {
+      "id": "practice-049",
+      "seconds": 2.208
+    },
+    {
+      "id": "practice-050",
+      "seconds": 2.784
+    },
+    {
+      "id": "practice-051",
+      "seconds": 2.016
+    },
+    {
+      "id": "practice-052",
+      "seconds": 2.064
+    },
+    {
+      "id": "practice-053",
+      "seconds": 2.136
+    },
+    {
+      "id": "practice-054",
+      "seconds": 2.544
+    },
+    {
+      "id": "practice-055",
+      "seconds": 2.328
+    },
+    {
+      "id": "practice-056",
+      "seconds": 2.376
+    },
+    {
+      "id": "practice-057",
+      "seconds": 2.184
+    },
+    {
+      "id": "practice-058",
+      "seconds": 2.136
+    },
+    {
+      "id": "practice-059",
+      "seconds": 2.304
+    },
+    {
+      "id": "practice-060",
+      "seconds": 2.232
+    },
+    {
+      "id": "practice-061",
+      "seconds": 1.92
+    },
+    {
+      "id": "practice-062",
+      "seconds": 2.232
+    },
+    {
+      "id": "practice-063",
+      "seconds": 2.52
+    },
+    {
+      "id": "practice-064",
+      "seconds": 2.376
+    },
+    {
+      "id": "practice-065",
+      "seconds": 2.376
+    },
+    {
+      "id": "practice-066",
+      "seconds": 2.184
+    },
+    {
+      "id": "practice-067",
+      "seconds": 2.16
+    },
+    {
+      "id": "practice-068",
+      "seconds": 2.136
+    },
+    {
+      "id": "practice-069",
+      "seconds": 2.256
+    },
+    {
+      "id": "practice-070",
+      "seconds": 2.184
+    },
+    {
+      "id": "practice-071",
+      "seconds": 2.184
+    },
+    {
+      "id": "practice-072",
+      "seconds": 2.376
+    },
+    {
+      "id": "practice-073",
+      "seconds": 2.28
+    },
+    {
+      "id": "practice-074",
+      "seconds": 2.496
+    },
+    {
+      "id": "practice-075",
+      "seconds": 2.496
+    },
+    {
+      "id": "practice-076",
+      "seconds": 2.592
+    },
+    {
+      "id": "practice-077",
+      "seconds": 2.784
+    },
+    {
+      "id": "practice-078",
+      "seconds": 2.208
+    },
+    {
+      "id": "practice-079",
+      "seconds": 2.424
+    },
+    {
+      "id": "practice-080",
+      "seconds": 2.664
+    },
+    {
+      "id": "practice-081",
+      "seconds": 2.544
+    },
+    {
+      "id": "practice-082",
+      "seconds": 2.448
+    },
+    {
+      "id": "practice-083",
+      "seconds": 2.304
+    },
+    {
+      "id": "practice-084",
+      "seconds": 2.664
+    },
+    {
+      "id": "practice-085",
+      "seconds": 2.496
+    },
+    {
+      "id": "practice-086",
+      "seconds": 2.592
+    },
+    {
+      "id": "practice-087",
+      "seconds": 2.52
+    },
+    {
+      "id": "practice-088",
+      "seconds": 2.496
+    },
+    {
+      "id": "practice-089",
+      "seconds": 2.448
+    },
+    {
+      "id": "practice-090",
+      "seconds": 2.448
+    },
+    {
+      "id": "practice-091",
+      "seconds": 2.352
+    },
+    {
+      "id": "practice-092",
+      "seconds": 2.52
+    },
+    {
+      "id": "practice-093",
+      "seconds": 2.376
+    },
+    {
+      "id": "practice-094",
+      "seconds": 2.4
+    },
+    {
+      "id": "practice-095",
+      "seconds": 2.376
+    },
+    {
+      "id": "practice-096",
+      "seconds": 2.424
+    },
+    {
+      "id": "practice-097",
+      "seconds": 2.328
+    },
+    {
+      "id": "practice-098",
+      "seconds": 2.712
+    },
+    {
+      "id": "practice-099",
+      "seconds": 2.664
+    },
+    {
+      "id": "practice-100",
+      "seconds": 2.208
+    }
+  ],
+  "android_tested": false,
+  "patient_trial_completed": false
+}

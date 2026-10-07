@@ -191,6 +191,12 @@ export class GroupPractice {
     }
     this.index++;
     this.completed = 0;
+    if (this.index % 10 === 0) {
+      this.kind = 'scheduled';
+      this.phase = 'playing';
+      this.pause('group-break');
+      return;
+    }
     this.play('scheduled');
   }
 

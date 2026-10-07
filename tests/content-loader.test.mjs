@@ -6,9 +6,9 @@ import { FakeClock } from './fake-clock.mjs';
 
 const phrase = { id: 'water', text: '我想喝水。', audio: 'audio/water.wav' };
 
-test('real ten-phrase manifest passes structural and relative-path checks', () => {
+test('real 100-item manifest passes structural and relative-path checks', () => {
   const data = JSON.parse(readFileSync(new URL('../content/phrases.json', import.meta.url), 'utf8'));
-  assert.equal(validatePhrases(data).length, 10);
+  assert.equal(validatePhrases(data).length, 100);
 });
 
 test('wrong shape, empty list, missing or non-string fields are rejected', () => {

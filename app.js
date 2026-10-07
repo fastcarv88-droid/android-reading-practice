@@ -91,7 +91,8 @@ function render() {
     idle: '准备好了，点击开始',
     playing: state.kind === 'extra' ? '请听额外示范' : '请听示范',
     listening: !useMicrophone ? '慢慢说，说完后点击“我说完了”' : state.heard ? '检测到声音，请慢慢说' : '轮到你了，慢慢说',
-    paused: state.pauseReason === 'background' ? '练习已暂停，返回后请点击继续'
+    paused: state.pauseReason === 'group-break' ? '已到下一组，先歇一会儿；准备好再点击继续'
+      : state.pauseReason === 'background' ? '练习已暂停，返回后请点击继续'
       : state.pauseReason === 'interrupted' ? '声音或麦克风被中断，请点击继续' : '练习已暂停，点击继续',
     error: state.problem === 'timeout' ? '这句音频加载或播放超时，请重试或下一句'
       : state.problem === 'blocked' ? '浏览器暂未允许播放，请点击“重试这句”'
@@ -247,7 +248,7 @@ async function loadContent() {
     const phrases = await loadPhrases({ fetcher: fetch });
     practice.phrases = phrases;
     if (document.createElement && document.head) {
-      for (const phrase of phrases) {
+      for (const phrase of phrases.slice(0, 10)) {
         const hint = document.createElement('link');
         hint.rel = 'prefetch';
         hint.as = 'audio';
@@ -255,7 +256,8 @@ async function loadContent() {
         document.head.appendChild(hint);
       }
     }
-    ui['phrase-select'].replaceChildren(...phrases.map(p => new Option(p.text, p.id)));
+    const groupNames = ['请字衔接', '请字短句', '问候回应', '喝水吃饭', '休息感受', '表达需要', '交流节奏', '家人陪伴', '日常活动', '练习反馈'];
+    ui['phrase-select'].replaceChildren(...phrases.map((p, i) => new Option(`${i + 1}. ${groupNames[Math.floor(i / 10)] || '短句'} · ${p.text}`, p.id)));
     const restored = localState.read(phrases);
     ui['repeats-select'].value = String(restored.settings.repeats);
     ui['silence-select'].value = String(restored.settings.silenceSeconds);

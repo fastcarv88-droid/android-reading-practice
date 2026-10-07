@@ -1,52 +1,502 @@
 [
   {
-    "id": "greeting",
-    "text": "你好。",
-    "audio": "audio/greeting.mp3"
+    "id": "practice-001",
+    "text": "请。",
+    "audio": "audio/slow-v2/practice-001.mp3"
   },
   {
-    "id": "morning",
-    "text": "早上好。",
-    "audio": "audio/morning.mp3"
+    "id": "practice-002",
+    "text": "请，坐。",
+    "audio": "audio/slow-v2/practice-002.mp3"
   },
   {
-    "id": "thanks",
-    "text": "谢谢你。",
-    "audio": "audio/thanks.mp3"
+    "id": "practice-003",
+    "text": "请坐。",
+    "audio": "audio/slow-v2/practice-003.mp3"
   },
   {
-    "id": "water",
-    "text": "我想喝水。",
-    "audio": "audio/water.mp3"
+    "id": "practice-004",
+    "text": "请，坐下。",
+    "audio": "audio/slow-v2/practice-004.mp3"
   },
   {
-    "id": "meal",
-    "text": "我想吃饭。",
-    "audio": "audio/meal.mp3"
+    "id": "practice-005",
+    "text": "请坐下。",
+    "audio": "audio/slow-v2/practice-005.mp3"
   },
   {
-    "id": "rest",
-    "text": "我想休息。",
-    "audio": "audio/rest.mp3"
+    "id": "practice-006",
+    "text": "请，喝水。",
+    "audio": "audio/slow-v2/practice-006.mp3"
   },
   {
-    "id": "help",
-    "text": "请帮帮我。",
-    "audio": "audio/help.mp3"
+    "id": "practice-007",
+    "text": "请喝水。",
+    "audio": "audio/slow-v2/practice-007.mp3"
+  },
+  {
+    "id": "practice-008",
+    "text": "请，慢一点。",
+    "audio": "audio/slow-v2/practice-008.mp3"
   },
   {
     "id": "slower",
     "text": "请慢一点。",
-    "audio": "audio/slower.mp3"
+    "audio": "audio/slow-v2/slower.mp3"
   },
   {
-    "id": "tired",
-    "text": "我有点累。",
-    "audio": "audio/tired.mp3"
+    "id": "help",
+    "text": "请帮帮我。",
+    "audio": "audio/slow-v2/help.mp3"
+  },
+  {
+    "id": "practice-011",
+    "text": "请进。",
+    "audio": "audio/slow-v2/practice-011.mp3"
+  },
+  {
+    "id": "practice-012",
+    "text": "请看。",
+    "audio": "audio/slow-v2/practice-012.mp3"
+  },
+  {
+    "id": "practice-013",
+    "text": "请听。",
+    "audio": "audio/slow-v2/practice-013.mp3"
+  },
+  {
+    "id": "practice-014",
+    "text": "请说。",
+    "audio": "audio/slow-v2/practice-014.mp3"
+  },
+  {
+    "id": "practice-015",
+    "text": "请等我。",
+    "audio": "audio/slow-v2/practice-015.mp3"
+  },
+  {
+    "id": "practice-016",
+    "text": "请看我。",
+    "audio": "audio/slow-v2/practice-016.mp3"
+  },
+  {
+    "id": "practice-017",
+    "text": "请听我说。",
+    "audio": "audio/slow-v2/practice-017.mp3"
+  },
+  {
+    "id": "practice-018",
+    "text": "请再说一遍。",
+    "audio": "audio/slow-v2/practice-018.mp3"
+  },
+  {
+    "id": "practice-019",
+    "text": "请给我水。",
+    "audio": "audio/slow-v2/practice-019.mp3"
+  },
+  {
+    "id": "practice-020",
+    "text": "请陪着我。",
+    "audio": "audio/slow-v2/practice-020.mp3"
+  },
+  {
+    "id": "greeting",
+    "text": "你好。",
+    "audio": "audio/slow-v2/greeting.mp3"
+  },
+  {
+    "id": "morning",
+    "text": "早上好。",
+    "audio": "audio/slow-v2/morning.mp3"
+  },
+  {
+    "id": "thanks",
+    "text": "谢谢你。",
+    "audio": "audio/slow-v2/thanks.mp3"
   },
   {
     "id": "goodbye",
     "text": "再见。",
-    "audio": "audio/goodbye.mp3"
+    "audio": "audio/slow-v2/goodbye.mp3"
+  },
+  {
+    "id": "practice-025",
+    "text": "晚上好。",
+    "audio": "audio/slow-v2/practice-025.mp3"
+  },
+  {
+    "id": "practice-026",
+    "text": "我在这里。",
+    "audio": "audio/slow-v2/practice-026.mp3"
+  },
+  {
+    "id": "practice-027",
+    "text": "我听到了。",
+    "audio": "audio/slow-v2/practice-027.mp3"
+  },
+  {
+    "id": "practice-028",
+    "text": "我知道了。",
+    "audio": "audio/slow-v2/practice-028.mp3"
+  },
+  {
+    "id": "practice-029",
+    "text": "好的。",
+    "audio": "audio/slow-v2/practice-029.mp3"
+  },
+  {
+    "id": "practice-030",
+    "text": "不用谢。",
+    "audio": "audio/slow-v2/practice-030.mp3"
+  },
+  {
+    "id": "water",
+    "text": "我想喝水。",
+    "audio": "audio/slow-v2/water.mp3"
+  },
+  {
+    "id": "meal",
+    "text": "我想吃饭。",
+    "audio": "audio/slow-v2/meal.mp3"
+  },
+  {
+    "id": "practice-033",
+    "text": "我有点饿。",
+    "audio": "audio/slow-v2/practice-033.mp3"
+  },
+  {
+    "id": "practice-034",
+    "text": "我有点渴。",
+    "audio": "audio/slow-v2/practice-034.mp3"
+  },
+  {
+    "id": "practice-035",
+    "text": "水有点热。",
+    "audio": "audio/slow-v2/practice-035.mp3"
+  },
+  {
+    "id": "practice-036",
+    "text": "水有点凉。",
+    "audio": "audio/slow-v2/practice-036.mp3"
+  },
+  {
+    "id": "practice-037",
+    "text": "我吃好了。",
+    "audio": "audio/slow-v2/practice-037.mp3"
+  },
+  {
+    "id": "practice-038",
+    "text": "我喝好了。",
+    "audio": "audio/slow-v2/practice-038.mp3"
+  },
+  {
+    "id": "practice-039",
+    "text": "我想喝温水。",
+    "audio": "audio/slow-v2/practice-039.mp3"
+  },
+  {
+    "id": "practice-040",
+    "text": "我想再吃一点。",
+    "audio": "audio/slow-v2/practice-040.mp3"
+  },
+  {
+    "id": "rest",
+    "text": "我想休息。",
+    "audio": "audio/slow-v2/rest.mp3"
+  },
+  {
+    "id": "tired",
+    "text": "我有点累。",
+    "audio": "audio/slow-v2/tired.mp3"
+  },
+  {
+    "id": "practice-043",
+    "text": "我想坐下。",
+    "audio": "audio/slow-v2/practice-043.mp3"
+  },
+  {
+    "id": "practice-044",
+    "text": "我想躺下。",
+    "audio": "audio/slow-v2/practice-044.mp3"
+  },
+  {
+    "id": "practice-045",
+    "text": "我想睡觉。",
+    "audio": "audio/slow-v2/practice-045.mp3"
+  },
+  {
+    "id": "practice-046",
+    "text": "我睡好了。",
+    "audio": "audio/slow-v2/practice-046.mp3"
+  },
+  {
+    "id": "practice-047",
+    "text": "我有点冷。",
+    "audio": "audio/slow-v2/practice-047.mp3"
+  },
+  {
+    "id": "practice-048",
+    "text": "我有点热。",
+    "audio": "audio/slow-v2/practice-048.mp3"
+  },
+  {
+    "id": "practice-049",
+    "text": "我很高兴。",
+    "audio": "audio/slow-v2/practice-049.mp3"
+  },
+  {
+    "id": "practice-050",
+    "text": "今天感觉不错。",
+    "audio": "audio/slow-v2/practice-050.mp3"
+  },
+  {
+    "id": "practice-051",
+    "text": "帮我一下。",
+    "audio": "audio/slow-v2/practice-051.mp3"
+  },
+  {
+    "id": "practice-052",
+    "text": "等我一下。",
+    "audio": "audio/slow-v2/practice-052.mp3"
+  },
+  {
+    "id": "practice-053",
+    "text": "陪我一会儿。",
+    "audio": "audio/slow-v2/practice-053.mp3"
+  },
+  {
+    "id": "practice-054",
+    "text": "我想上厕所。",
+    "audio": "audio/slow-v2/practice-054.mp3"
+  },
+  {
+    "id": "practice-055",
+    "text": "我想洗手。",
+    "audio": "audio/slow-v2/practice-055.mp3"
+  },
+  {
+    "id": "practice-056",
+    "text": "我想擦脸。",
+    "audio": "audio/slow-v2/practice-056.mp3"
+  },
+  {
+    "id": "practice-057",
+    "text": "给我纸巾。",
+    "audio": "audio/slow-v2/practice-057.mp3"
+  },
+  {
+    "id": "practice-058",
+    "text": "给我毛巾。",
+    "audio": "audio/slow-v2/practice-058.mp3"
+  },
+  {
+    "id": "practice-059",
+    "text": "把灯打开。",
+    "audio": "audio/slow-v2/practice-059.mp3"
+  },
+  {
+    "id": "practice-060",
+    "text": "把门关上。",
+    "audio": "audio/slow-v2/practice-060.mp3"
+  },
+  {
+    "id": "practice-061",
+    "text": "慢一点。",
+    "audio": "audio/slow-v2/practice-061.mp3"
+  },
+  {
+    "id": "practice-062",
+    "text": "再说一遍。",
+    "audio": "audio/slow-v2/practice-062.mp3"
+  },
+  {
+    "id": "practice-063",
+    "text": "让我想一想。",
+    "audio": "audio/slow-v2/practice-063.mp3"
+  },
+  {
+    "id": "practice-064",
+    "text": "我还没说完。",
+    "audio": "audio/slow-v2/practice-064.mp3"
+  },
+  {
+    "id": "practice-065",
+    "text": "我想说一句。",
+    "audio": "audio/slow-v2/practice-065.mp3"
+  },
+  {
+    "id": "practice-066",
+    "text": "我没听清。",
+    "audio": "audio/slow-v2/practice-066.mp3"
+  },
+  {
+    "id": "practice-067",
+    "text": "我听懂了。",
+    "audio": "audio/slow-v2/practice-067.mp3"
+  },
+  {
+    "id": "practice-068",
+    "text": "这样可以。",
+    "audio": "audio/slow-v2/practice-068.mp3"
+  },
+  {
+    "id": "practice-069",
+    "text": "不是这个。",
+    "audio": "audio/slow-v2/practice-069.mp3"
+  },
+  {
+    "id": "practice-070",
+    "text": "就是这个。",
+    "audio": "audio/slow-v2/practice-070.mp3"
+  },
+  {
+    "id": "practice-071",
+    "text": "你坐这里。",
+    "audio": "audio/slow-v2/practice-071.mp3"
+  },
+  {
+    "id": "practice-072",
+    "text": "我们一起坐。",
+    "audio": "audio/slow-v2/practice-072.mp3"
+  },
+  {
+    "id": "practice-073",
+    "text": "你吃饭了吗？",
+    "audio": "audio/slow-v2/practice-073.mp3"
+  },
+  {
+    "id": "practice-074",
+    "text": "今天辛苦了。",
+    "audio": "audio/slow-v2/practice-074.mp3"
+  },
+  {
+    "id": "practice-075",
+    "text": "见到你真好。",
+    "audio": "audio/slow-v2/practice-075.mp3"
+  },
+  {
+    "id": "practice-076",
+    "text": "我想和你说话。",
+    "audio": "audio/slow-v2/practice-076.mp3"
+  },
+  {
+    "id": "practice-077",
+    "text": "我想看看照片。",
+    "audio": "audio/slow-v2/practice-077.mp3"
+  },
+  {
+    "id": "practice-078",
+    "text": "我们聊一会儿。",
+    "audio": "audio/slow-v2/practice-078.mp3"
+  },
+  {
+    "id": "practice-079",
+    "text": "我想听音乐。",
+    "audio": "audio/slow-v2/practice-079.mp3"
+  },
+  {
+    "id": "practice-080",
+    "text": "明天再来看我。",
+    "audio": "audio/slow-v2/practice-080.mp3"
+  },
+  {
+    "id": "practice-081",
+    "text": "今天天气好。",
+    "audio": "audio/slow-v2/practice-081.mp3"
+  },
+  {
+    "id": "practice-082",
+    "text": "外面下雨了。",
+    "audio": "audio/slow-v2/practice-082.mp3"
+  },
+  {
+    "id": "practice-083",
+    "text": "太阳出来了。",
+    "audio": "audio/slow-v2/practice-083.mp3"
+  },
+  {
+    "id": "practice-084",
+    "text": "我想看看窗外。",
+    "audio": "audio/slow-v2/practice-084.mp3"
+  },
+  {
+    "id": "practice-085",
+    "text": "我想看电视。",
+    "audio": "audio/slow-v2/practice-085.mp3"
+  },
+  {
+    "id": "practice-086",
+    "text": "声音小一点。",
+    "audio": "audio/slow-v2/practice-086.mp3"
+  },
+  {
+    "id": "practice-087",
+    "text": "声音大一点。",
+    "audio": "audio/slow-v2/practice-087.mp3"
+  },
+  {
+    "id": "practice-088",
+    "text": "把窗帘拉开。",
+    "audio": "audio/slow-v2/practice-088.mp3"
+  },
+  {
+    "id": "practice-089",
+    "text": "把手机给我。",
+    "audio": "audio/slow-v2/practice-089.mp3"
+  },
+  {
+    "id": "practice-090",
+    "text": "现在几点了？",
+    "audio": "audio/slow-v2/practice-090.mp3"
+  },
+  {
+    "id": "practice-091",
+    "text": "我准备好了。",
+    "audio": "audio/slow-v2/practice-091.mp3"
+  },
+  {
+    "id": "practice-092",
+    "text": "我想试一试。",
+    "audio": "audio/slow-v2/practice-092.mp3"
+  },
+  {
+    "id": "practice-093",
+    "text": "我们慢慢来。",
+    "audio": "audio/slow-v2/practice-093.mp3"
+  },
+  {
+    "id": "practice-094",
+    "text": "我再说一次。",
+    "audio": "audio/slow-v2/practice-094.mp3"
+  },
+  {
+    "id": "practice-095",
+    "text": "这句有点难。",
+    "audio": "audio/slow-v2/practice-095.mp3"
+  },
+  {
+    "id": "practice-096",
+    "text": "这句我会说。",
+    "audio": "audio/slow-v2/practice-096.mp3"
+  },
+  {
+    "id": "practice-097",
+    "text": "让我歇一会儿。",
+    "audio": "audio/slow-v2/practice-097.mp3"
+  },
+  {
+    "id": "practice-098",
+    "text": "今天先到这里。",
+    "audio": "audio/slow-v2/practice-098.mp3"
+  },
+  {
+    "id": "practice-099",
+    "text": "下次继续练。",
+    "audio": "audio/slow-v2/practice-099.mp3"
+  },
+  {
+    "id": "practice-100",
+    "text": "我说完了。",
+    "audio": "audio/slow-v2/practice-100.mp3"
   }
 ]

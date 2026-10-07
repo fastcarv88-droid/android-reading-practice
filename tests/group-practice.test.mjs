@@ -23,6 +23,24 @@ function fixture({ repeats = 2, count = 2 } = {}) {
   return { practice, audio, listener, sessions, states, ended, finish, clock };
 }
 
+test('100-item library pauses at the next group and resumes that phrase without autoplay', () => {
+  const f = fixture({ count: 100, repeats: 1 });
+  f.practice.start(9);
+  f.ended(); f.finish();
+  assert.equal(f.practice.index, 10);
+  assert.equal(f.practice.phase, 'paused');
+  assert.equal(f.practice.pauseReason, 'group-break');
+  assert.equal(f.audio.calls, 1);
+  f.practice.resume();
+  assert.equal(f.practice.index, 10);
+  assert.equal(f.practice.phase, 'playing');
+  assert.equal(f.audio.calls, 2);
+  f.practice.pause();
+  f.practice.start(99);
+  f.ended(); f.finish();
+  assert.equal(f.practice.phase, 'complete');
+});
+
 test('repeating the same sentence retains buffered audio; changing sentence reloads it', () => {
   const f = fixture();
   let source, assignments = 0;
@@ -226,20 +244,24 @@ test('completed group restarts explicitly at the first sentence', () => {
   assert.equal(f.practice.completed, 0);
 });
 
-test('the actual ten-phrase list completes a whole group in order', () => {
+test('the actual 100-item list plays in order with explicit continuation at group breaks', () => {
   const f = fixture();
   const phrases = JSON.parse(readFileSync(new URL('../content/phrases.json', import.meta.url), 'utf8'));
   f.practice.phrases = phrases;
   f.practice.start();
   const played = [];
   for (const phrase of phrases) {
+    if (f.practice.phase === 'paused') {
+      assert.equal(f.practice.pauseReason, 'group-break');
+      f.practice.resume();
+    }
     for (let repeat = 0; repeat < 2; repeat++) {
       played.push(f.audio.src);
       assert.equal(f.audio.src, phrase.audio);
       f.ended(); f.finish();
     }
   }
-  assert.equal(played.length, 20);
+  assert.equal(played.length, 200);
   assert.equal(f.practice.phase, 'complete');
 });
 
